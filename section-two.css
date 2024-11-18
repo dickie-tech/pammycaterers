@@ -1,0 +1,178 @@
+.section-two{
+    background-image: url( ../images/pammy3.jpg);
+    background-size: cover cover;
+    background-repeat: repeat;
+    padding-bottom: 50px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    
+}
+.come {
+    height: 170px;
+    width: 170px;
+}
+
+.service img {
+    height: 600px;
+    width: 400px;
+    margin-left: 10px;
+    border-radius: 20px;
+    
+}
+.About {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 20px;
+    
+    
+}
+
+.pammy-services{
+    
+
+    background: linear-gradient(to right,rgba(7, 59, 203, 0.87)0%, rgba(227, 240, 228, 0.404)100%);
+    height: 780px;
+    width: 1000px;
+    margin-top: 70px;
+    margin-left: -730px;
+    border-radius: 20px;
+    inset: 0;
+
+}
+.about-us {
+    font-family: Lobster, sans-serif;
+    
+    
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 100px;
+    color: lightgreen;
+    
+    
+}
+.description-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 28px;
+}
+.description {
+    
+
+    
+    font-size: 20px;
+    color:rgb(9, 235, 255);
+}
+.contacts-section{
+    display: flex;
+    flex-direction: column;
+    margin-right: -700px;
+    margin-top: 70px;
+}
+
+
+.contact-details {
+    
+    
+    color: yellow;
+    background: linear-gradient(to right,rgba(203, 43, 7, 0.87)0%, rgba(2, 106, 11, 0.404)100%);
+    height: 500px;
+    width: 300px;
+    min-width: 100px;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.details {
+    display: flex;
+    
+    width: 100%;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color:rgb(3, 145, 184)
+}
+.catering{
+    display: flex;
+    
+    margin-top: 270px;
+    height: 250px;
+    width: 370px;
+    border-radius: 30px;
+    margin-left: -30px;
+    
+}
+.book {
+    margin-top: 30px;
+    height: 70px;
+    width: 200px;
+    
+    
+
+}
+.book-text {
+    color: white;
+    font-size: 25px;
+}
+.book-button {
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-bottom: 30px;
+    border-radius: 50px;
+    background-color: rgb(3, 78, 216);
+    white-space: nowrap;
+}
+.book-button:hover {
+    background-color: rgb(7, 171, 226);
+    cursor: pointer;
+    transition: 2s;
+}
+@media(max-width:540px){
+    .About{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-details {
+        margin-top: 10px;
+        margin-left: 75px;
+        margin-right: 0;
+    }
+    .book {
+        margin-left: 105px;
+    }
+    .contacts-section{
+        justify-content: center;
+        margin-right: 30px;
+    }
+    .pammy-services {
+        width: 500px;
+        margin-left: 10px;
+    }
+    .about-us{
+        font-size: 50px;
+    }
+    .service img{
+        height: 300px;
+        width: 200px;
+    }
+    .description-container {
+        flex-direction: column;
+    }
+    .description{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+}

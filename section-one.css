@@ -1,0 +1,145 @@
+.section-one{
+    background-image: url( ../images/pammybackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+.section-one::before{
+    content:'';
+    background: linear-gradient(to right,rgba(6, 36, 188, 0.87)0%, rgba(1, 88, 120, 0.404)100%);
+    position: absolute;
+    inset: 0;
+    top: 130px;
+    left: 100px;
+    right: 100px;
+    bottom: 60px;
+    height: 100vh;
+    z-index: 1;
+    flex: 1;
+    border-radius: 20px;
+    
+
+}
+.display {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    
+    
+    
+
+    z-index: 1;
+    
+}
+.menu,.contacts {
+    color: white;
+    z-index: 1;
+    
+}
+.menu {
+    padding-left: 0px;
+    font-size: 20px;
+}
+.contacts {
+    margin-left: 25px;
+    font-size: 20px;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo {
+    height: 150px;
+    width: 150px;
+    z-index: 2;
+    border-radius: 75px;
+    animation: swing 2s ease-in-out infinite;
+    transform-origin: top right;
+}
+@keyframes swing {
+    0% {
+        transform: rotate(0deg); /* Start position */
+    }
+    25% {
+        transform: rotate(15deg); /* Swing to the right */
+    }
+    50% {
+        transform: rotate(0deg); /* Return to start */
+    }
+    75% {
+        transform: rotate(30deg); /* Swing to the left */
+    }
+    100% {
+        transform: rotate(-15deg); /* Return to start */
+    }
+}
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 150px;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    margin: auto;
+    font-size: 110px;
+    max-width: 90%;
+    min-width: 100px;
+}
+.welcome{
+    font-family: Rubik Wet Paint, system-ui;
+    font-weight: 400;
+    
+    font-style: normal;
+    font-size: 8vw;
+    color:aquamarine;
+    opacity: 0;
+    animation: fadeIn 13s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* End state */
+    }
+}
+.delight{
+    font-family: Lobster, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7vw;
+    margin-top: 70px;
+    color:chocolate;
+    transform: translateX(-100%); /* Start position */
+    opacity: 0; /* Start invisible */
+    animation: slideIn 11s forwards; /* Animation properties */
+
+}
+@keyframes slideIn {
+    to {
+        transform: translateX(0); /* End position */
+        opacity: 1; /* End visible */
+    }
+}
+@media(max-width: 540px) {
+    .section-one::before {
+        left: 30px;
+        right: 30px;
+    }
+    .welcome {
+        font-size: 18vw;
+
+    }
+}

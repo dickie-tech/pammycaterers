@@ -1,0 +1,67 @@
+.section-two2{
+    background-image: url( ../images/pammy3.jpg);
+    background-size:  cover;
+    background-repeat: repeat;
+    bottom: 0;
+    height: 100vh;
+}
+.book-now{
+    display: flex;
+    flex-direction: row;
+}
+.pammy{
+    color: aquamarine;
+    font-size: 5vw;
+    font-family: Rubik Wet Paint, system-ui;
+    font-weight: 400;
+    margin-left: 200px;
+}
+.contact-details {
+    
+    
+    color: yellow;
+    background: linear-gradient(to right,rgba(203, 43, 7, 0.87)0%, rgba(2, 106, 11, 0.404)100%);
+    height: 300px;
+    width: 300px;
+    min-width: 100px;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-left: 15px;
+
+}
+.service img {
+    height: 570px;
+    width: 500px;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+.service {
+    margin: auto;
+    margin-top: 50px;
+}
+@media(max-width: 540px){
+    .contact-details {
+        margin-top: 10px;
+        margin-left: 85px;
+        margin-right: 20px;
+        height: 250px;
+    }
+    .service img{
+        height: 370px;
+        width: 400px;
+    }
+    .book-now{
+        display: flex;
+        flex-direction: column;
+    }
+    .pammy{
+        margin-left: 50px;
+        font-size: 7vw;
+    }
+}
